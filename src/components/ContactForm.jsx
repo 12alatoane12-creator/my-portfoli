@@ -17,10 +17,28 @@ function ContactForm() {
     })
   }
 
-  function handleSubmit(event) {
-    event.preventDefault()
-    setNotice('Demo form: message not actually sent.')
-  }
+  
+function handleSubmit(event) {
+  event.preventDefault()
+
+  const subject = encodeURIComponent(
+    `Portfolio Message from ${form.name}`
+  )
+
+  const body = encodeURIComponent(
+    `Name: ${form.name}
+Email: ${form.email}
+
+Message:
+${form.message}`
+  )
+
+  window.location.href =
+    `mailto:12alatoane12@gmail.com?subject=${subject}&body=${body}`
+
+  setNotice('Please press Send in your email app.')
+}
+
 
   function clearForm() {
     setForm({ name: '', email: '', message: '' })
