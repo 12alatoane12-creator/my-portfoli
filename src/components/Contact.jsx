@@ -23,6 +23,16 @@ function Contact() {
 
           </div>
 
+<div className="social-links">
+  <a
+    href="https://github.com/12alatoane12-creator"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    GitHub
+  </a>
+</div>
+
       </section></>
   )
 }
