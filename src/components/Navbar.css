@@ -73,3 +73,19 @@ align-items: center;
     display: flex;
   }
 }
+
+.theme-toggle {
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.theme-toggle:hover {
+  background-color: #a855f7;
+  transform: translateY(-2px);
+}

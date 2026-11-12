@@ -1,6 +1,6 @@
 import './Navbar.css'
 import { useState } from 'react'
-function Navbar() {
+function Navbar({ isLight, onToggleTheme }) {
     const [isOpen, setIsOpen] = useState(false)
   return (
 
@@ -33,6 +33,16 @@ function Navbar() {
   <li><a href="#contact" onClick={() => setIsOpen(false)}>
     Contact
   </a></li>
+
+<li>
+  <button
+    type="button"
+    className="theme-toggle"
+    onClick={onToggleTheme}
+  >
+    {isLight ? '🌙 Dark' : '☀️ Light'}
+  </button>
+</li>
 
 </ul>
     </nav>

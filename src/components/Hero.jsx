@@ -36,7 +36,7 @@ function Hero() {
       </div>
 
       <div className="hero-avatar">
-        YN
+        اللوكو 
       </div>
 
     </section>
