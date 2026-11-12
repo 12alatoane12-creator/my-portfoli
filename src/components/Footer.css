@@ -1,0 +1,19 @@
+.footer {
+  background-color: #1c1c27;
+  color: white;
+  text-align: center;
+  padding: 35px 8%;
+  border-top: 1px solid #333;
+}
+
+.footer h3 {
+  color: #a855f7;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  color: #ccc;
+  font-size: 15px;
+  margin: 8px 0;
+}
